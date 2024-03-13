@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <IsPublishable>True</IsPublishable>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <IsPublishable>True</IsPublishable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cosmos.Common" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.Core" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.Debug.Kernel" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.Debug.Kernel.Plugs.Asm" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.HAL2" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.Plugs" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.System2" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.System2_Plugs" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="IL2CPU.API" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Spruce" Version="10.0.0" />
+    <PackageReference Include="XSharp" Version="10.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Cosmos.Core">
+      <HintPath>..\..\..\..\AppData\Roaming\Cosmos User Kit\Kernel\Cosmos.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="IL2CPU.API">
+      <HintPath>..\..\..\..\AppData\Roaming\Cosmos User Kit\Kernel\IL2CPU.API.dll</HintPath>
+    </Reference>
+    <Reference Include="XSharp.Assembler">
+      <HintPath>..\..\..\..\AppData\Roaming\Cosmos User Kit\Build\IL2CPU\XSharp.Assembler.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

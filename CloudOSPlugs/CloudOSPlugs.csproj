@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>CloudOSPlugs</Title>
+    <Description>CloudOS Plugs for CloudOS.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cosmos.Common" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.Core" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.HAL2" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.System2" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="IL2CPU.API" Version="0.1.0-localbuild20240308035304" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CloudOSLib\CloudOSLib.csproj" />
+  </ItemGroup>
+
+</Project>

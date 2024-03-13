@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\adevcloud.bmp" />
+    <None Remove="Resources\aerotitlebar.bmp" />
+    <None Remove="Resources\glassclosebtn.bmp" />
+    <None Remove="Resources\glasstitlebar.bmp" />
+    <None Remove="Resources\mousecursor.bmp" />
+    <None Remove="Resources\prebetabackground.bmp" />
+    <None Remove="SystemFonts\ARIAL.TTF" />
+    <None Remove="SystemFonts\NotoSansKR.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\glassclosebtn.bmp" />
+    <EmbeddedResource Include="Resources\glasstitlebar.bmp" />
+    <EmbeddedResource Include="Resources\mousecursor.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\adevcloud.bmp" />
+    <EmbeddedResource Include="Resources\prebetabackground.bmp" />
+    <EmbeddedResource Include="SystemFonts\ARIAL.TTF" />
+    <EmbeddedResource Include="SystemFonts\NotoSansKR.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cosmos.Core" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="Cosmos.System2" Version="0.1.0-localbuild20240308035304" />
+    <PackageReference Include="CosmosTTF" Version="4.0.1" />
+    <PackageReference Include="IL2CPU.API" Version="0.1.0-localbuild20240308035304" />
+  </ItemGroup>
+
+</Project>
